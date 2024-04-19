@@ -3,10 +3,14 @@ function generateBuildingReport(primaryControl) {
     var request = {};
     request.getMetadata = function () {
         return {
-            boundParameter: null,
-            operationName: "BuildingReport",
+            boundParameter: "entity",
+            operationName: "dkl_BuildingReport",
             operationType: 0,
             parameterTypes: {
+                "entity": { 
+                    typeName: "dkl_building", 
+                    structuralProperty: 5 
+                },
                 "buildingID": {
                     "typeName": "Edm.String",
                     "structuralProperty": 1 // Entity Type
@@ -14,6 +18,7 @@ function generateBuildingReport(primaryControl) {
             },
         };
     };
+    request.entity = primaryControl.data.entity.getEntityReference();
     request.buildingID = primaryControl.data.entity.getId();
     Xrm.WebApi.online.execute(request).then(
         function (result) {
