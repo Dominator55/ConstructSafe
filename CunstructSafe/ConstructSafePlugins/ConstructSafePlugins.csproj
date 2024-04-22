@@ -7,8 +7,8 @@
     <ProjectGuid>{DCEFBFF5-6E43-4DF6-BB54-AC4A7CFBB8FE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CunstructSafePlugins</RootNamespace>
-    <AssemblyName>CunstructSafePlugins</AssemblyName>
+    <RootNamespace>ConstructSafePlugins</RootNamespace>
+    <AssemblyName>ConstructSafePlugins</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

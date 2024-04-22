@@ -1,11 +1,13 @@
 function readonlyAfterCreate(executionContext, fieldnames) {
     var formContext = executionContext.getFormContext();
-    fieldnames.forEach(fieldname => {
-        var control = formContext.getControl(fieldname);
-        if (control) {
-        control.setDisabled(true);
-        }
-    });
+    if(formContext.ui.getFormType()==1){
+        fieldnames.forEach(fieldname => {
+            var control = formContext.getControl(fieldname);
+            if (control) {
+                control.setDisabled(false);
+            }
+        });
+    }
 }
   
 function StartIsMoreThenEnd(executionContext, start, end) {

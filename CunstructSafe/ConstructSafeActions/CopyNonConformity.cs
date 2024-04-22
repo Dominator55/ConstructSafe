@@ -1,10 +1,9 @@
-﻿using System;
+﻿// I unfortunately didn't manage to get this part of an solution working
+
+using System;
 using System.Activities;
-using System.Activities.Statements;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ConstructSafeCommon;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Workflow;
@@ -20,7 +19,6 @@ namespace ConstructSafeActions
 
         [Output("copyId")]
         public OutArgument<string> copyId { get; set; }
-
 
         protected override void Execute(CodeActivityContext executionContext)
         {
