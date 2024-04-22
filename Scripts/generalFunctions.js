@@ -1,4 +1,4 @@
-function readonlyAfterCreate(executionContext, fieldnames) {
+function editableOnCreate(executionContext, fieldnames) {
     var formContext = executionContext.getFormContext();
     if(formContext.ui.getFormType()==1){
         fieldnames.forEach(fieldname => {
@@ -10,7 +10,7 @@ function readonlyAfterCreate(executionContext, fieldnames) {
     }
 }
   
-function StartIsMoreThenEnd(executionContext, start, end) {
+function startIsMoreThenEnd(executionContext, start, end) {
     var formContext = executionContext.getFormContext()
     var startTime = formContext.getAttribute(start).getValue()
     var endTime = formContext.getAttribute(end).getValue() 
@@ -26,7 +26,7 @@ function StartIsMoreThenEnd(executionContext, start, end) {
     }
 }
 
-function EndIsLessThenStart(executionContext, start, end) {
+function endIsLessThenStart(executionContext, start, end) {
     var formContext = executionContext.getFormContext()
     var startTime = formContext.getAttribute(start).getValue()
     var endTime = formContext.getAttribute(end).getValue() 

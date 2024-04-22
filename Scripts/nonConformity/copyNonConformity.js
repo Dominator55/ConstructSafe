@@ -8,8 +8,8 @@ function copyNonConformity(primaryControl) {
             operationType: 0,
             parameterTypes: {
                 "entity": { 
-                    typeName: "dkl_nonconformity", 
-                    structuralProperty: 5 
+                    "typeName": "dkl_nonconformity", 
+                    "structuralProperty": 5 
                 },
                 "nonConformityId": {
                     "typeName": "Edm.String",
