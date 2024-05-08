@@ -26,7 +26,7 @@ namespace ConstructSafePlugins
             string primaryEntityName = context.PrimaryEntityName;
             try
             {
-                if (context.MessageName == PluginMessage.Create && context.Stage == StageNum.Post_Operation) { 
+                if (context.MessageName == PluginMessage.Create && context.Stage == StageNum.Pre_Operation) { 
                     using (ConstructSafeContext ctx = new ConstructSafeContext(service))
                     {
                         dkl_NonConformity target = ((Entity)context.InputParameters["Target"] as Entity).ToEntity<dkl_NonConformity>();
